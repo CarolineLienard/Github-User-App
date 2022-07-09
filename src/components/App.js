@@ -1,8 +1,16 @@
-import '../styles/App.css';
+import '../sass/main.scss';
+
+import Header from './Header';
+import Search from './Search';
+import User from './User';
 
 function App() {
   return (
-    "hello world"
+    <main className="flex column">
+      <Header />
+      <Search />
+      <User />
+    </main>
   )  
 }
 

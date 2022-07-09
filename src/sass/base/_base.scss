@@ -1,0 +1,135 @@
+// Main 
+* {
+    font-family: "Space Mono";
+    color: $dark-color-light;
+}
+
+body {
+    background-color: $dark-primary-color;
+}
+
+
+// Text
+h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    margin: 0;
+    @include mobile-only {
+        font-size: 16px;
+    }
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    @include mobile-only {
+        font-size: 13px;
+    }
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0;
+    @include mobile-only {
+        font-size: 11px;
+    }
+}
+
+p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0;
+    @include mobile-only {
+        font-size: 13px;
+    }
+}
+
+
+// Button & input
+label {
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 2.5px;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+input {
+    background: none;
+    border: none;
+    caret-color: $primary-color;
+    width: 100%;
+}
+
+input::placeholder {
+    color: $dark-color-light;
+    text-overflow: ellipsis;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+#initial-input {
+    @include mobile-only {
+        display: none;
+    }
+}
+
+#responsive-input {
+    display: none;
+    @include mobile-only {
+        display: inherit;
+    }
+}
+
+// Flex 
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.unset {
+    flex-direction: unset;
+}
+
+.center {
+    align-items: center;
+}
+
+.justify {
+    justify-content: center;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.end {
+    justify-content: flex-end;
+}

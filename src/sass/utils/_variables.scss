@@ -1,0 +1,20 @@
+                                // Colors //
+
+// Primary colors
+$primary-color : #0079FF; 
+
+// Light mode colors
+$light-primary-color : #697C9A;
+$light-secondary-color : #4B6A9B;
+$light-third-color : #F6F8FF;
+$light-fourth-color : #FEFEFE;
+$light-dark-color : #2B3442;
+
+// Dark mode colors
+$dark-color-light : #FFFFFF;
+$dark-primary-color : #141D2F;
+$dark-secondary-color : #1E2A47;
+
+
+                                // Responsive //
+$breakpoints: ( mobile-small: 390px, mobile: 565px, ipad-Xsmall: 700px, ipad-small : 820px, ipad: 1080px, desktop-small: 1200px, desktop: 1350px );
