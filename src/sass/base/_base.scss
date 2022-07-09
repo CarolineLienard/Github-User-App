@@ -33,7 +33,7 @@ main {
     }
 }
 
-// Text
+// Text & links
 h1 {
     font-weight: 700;
     font-size: 26px;
@@ -79,6 +79,11 @@ p {
     @include mobile-only {
         font-size: 13px;
     }
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 // Button & input
