@@ -1,0 +1,13 @@
+.logo-container {
+    padding-bottom: 1rem;
+    button {
+        svg {
+            fill: $dark-color-light;
+        }
+        :hover {
+            cursor: pointer;
+            fill: $dark-hover-light;
+            color: $dark-hover-light;
+        }
+    }
+}
