@@ -29,7 +29,7 @@ Expected behaviour :
 
 ### Screenshot
 
-![](.src/assets/project.png))
+![](./src/assets/project.png)
 
 
 ### Links
