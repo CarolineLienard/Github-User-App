@@ -4,10 +4,27 @@
         svg {
             fill: $dark-color-light;
         }
-        :hover {
-            cursor: pointer;
-            fill: $dark-hover-light;
-            color: $dark-hover-light;
+    }
+    :hover svg, :hover label {
+        cursor: pointer;
+        fill: $dark-hover-light;
+        color: $dark-hover-light;
+    }
+}
+
+// Light theme
+#light .logo-container {
+    button {
+        svg {
+            fill: $light-primary-color;
         }
+        label {
+            color: $light-primary-color;
+        }
+    }
+    :hover svg, :hover label {
+        cursor: pointer;
+        fill: $light-dark-color;
+        color: $light-dark-color;
     }
 }
