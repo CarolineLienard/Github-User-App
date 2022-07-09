@@ -34,7 +34,7 @@ Expected behaviour :
 
 ### Links
 
-- Solution URL: (https://carolinelienard.github.io/Github-User-Search-App/)
+- Solution URL: (https://carolinelienard.github.io/Github-User-App/)
 
 ## My process
 
