@@ -1,4 +1,3 @@
-
 function Header ({themeSwitch, buttonLabel}) {
     return (
         <div className="logo-container flex center between">

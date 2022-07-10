@@ -8,7 +8,16 @@ export const ThemeContext = createContext(null);
 
 function App() {
 
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("");
+
+  useEffect (() => {
+    let themePreference = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (themePreference) {
+      setTheme("dark")
+    } else {
+      setTheme("light")
+    }
+  }, [] )
 
   function toggleTheme () {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
