@@ -6,7 +6,7 @@ function User ({userData}) {
 
             <div className="user-container__head flex">
                 <div className="user-container__head--img">
-                    <img height="117px" src={userData.avatar_url} alt="" />
+                    <img width="117px" src={userData.avatar_url} alt="" />
                 </div>
 
                 <div className="user-container__head--name flex between">

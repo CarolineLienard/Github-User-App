@@ -140,19 +140,6 @@ input[type="search"]::-webkit-search-cancel-button {
     display: none;
 }
 
-#initial-input {
-    @include mobile-only {
-        display: none;
-    }
-}
-
-#responsive-input {
-    display: none;
-    @include mobile-only {
-        display: inherit;
-    }
-}
-
 // Flex 
 .flex {
     display: flex;
