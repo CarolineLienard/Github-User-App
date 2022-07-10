@@ -9,6 +9,7 @@ export const ThemeContext = createContext(null);
 function App() {
 
   const [theme, setTheme] = useState("");
+  const [userData, setUserData] = useState({})
 
   useEffect (() => {
     let themePreference = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -28,12 +29,16 @@ function App() {
     theme === "light" ? bodyColor.id = "light" : bodyColor.id = "dark"
   },[theme])
 
+  function getResponse(userData){
+    setUserData(userData)
+  }
+
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <main className="flex column" id={theme}>
         <Header themeSwitch={toggleTheme} buttonLabel={theme} />
-        <Search />
-        <User />
+        <Search getRes={getResponse} />
+        <User userData={userData} />
       </main>
     </ThemeContext.Provider>
   )  
