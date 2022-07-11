@@ -11,6 +11,9 @@
         .date {
             p {
                 line-height: 38px;
+                @include mobile-small-only {
+                    line-height: 20px;
+                }
             }
         }
         &--img {
@@ -22,10 +25,16 @@
                 @include mobile-only {
                     width: 100%;
                 }
+                @include mobile-small-only {
+                    width: 120%;
+                }
             }
         }
         &--name {
             width: 100%;
+            @include mobile-only {
+                gap: 0.5em;
+            }
             @include ipad-only {
                 flex-direction: column;
                 justify-content: unset;
@@ -39,8 +48,11 @@
                     @include mobile-only {
                         font-size: 16px;
                     }
+                    @include mobile-small-only {
+                        line-height: 28px;
+                    }
                 }
-                h3 {
+                a {
                     color: $primary-color;
                     @include mobile-only {
                         line-height: 1em;
@@ -53,8 +65,14 @@
         margin-top: -4rem;
         margin-left: 9.5rem;
         gap: 2rem;
+        @include mobile-only {
+            align-items: center;
+        }
         @include ipad-only {
             margin: 0;
+        }
+        .description {
+            width: 100%;
         }
         .stats {
             background-color: $dark-primary-color;
@@ -65,9 +83,10 @@
                 gap: 4rem;
                 justify-content: center;
                 text-align: center;
+                width: 85%;
             }
             @include mobile-small-only {
-                gap: 1.4rem;
+                gap: 2.5rem;
             }
         }
         .social {

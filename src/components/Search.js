@@ -32,7 +32,8 @@ function Search ({getRes}) {
                 type="search" 
                 autoComplete="off" 
                 placeholder="Search GitHub username..." 
-                id="initial-input" 
+                id="initial-input"
+                className="ellipsis"
             />
             
             {

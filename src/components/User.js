@@ -12,7 +12,7 @@ function User ({userData}) {
                 <div className="user-container__head--name flex between">
                     <div className="name ellipsis">
                         <h1 className="ellipsis">{userData.name ? userData.name : userData.login}</h1>
-                        <h3>@{userData.login}</h3>
+                        <a href={`https://github.com/${userData.login}`} target="_blank">@{userData.login}</a>
                     </div>
 
                     <div className="date">
