@@ -7,7 +7,7 @@
             fill: $dark-color-light;
         }
     }
-    :hover svg, :hover label {
+    :hover svg, :hover span {
         cursor: pointer;
         fill: $dark-hover-light;
         color: $dark-hover-light;
@@ -15,16 +15,16 @@
 }
 
 // Light theme
-#light .logo-container {
+.light .logo-container {
     button {
         svg {
             fill: $light-primary-color;
         }
-        label {
+        span {
             color: $light-primary-color;
         }
     }
-    :hover svg, :hover label {
+    :hover svg, :hover span {
         cursor: pointer;
         fill: $light-dark-color;
         color: $light-dark-color;

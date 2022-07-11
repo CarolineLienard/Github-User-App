@@ -3,7 +3,7 @@ function Header ({themeSwitch, buttonLabel}) {
         <div className="logo-container flex center between">
             <h1>devfinder</h1>
             <button className="themeSwitch flex center" onClick={themeSwitch}>
-                <label>{ buttonLabel === "dark" ? "LIGHT" : "DARK"}</label>
+                <span>{ buttonLabel === "dark" ? "LIGHT" : "DARK"}</span>
                 <svg width="20" height="20">
                     {
                         buttonLabel === "light" ? 

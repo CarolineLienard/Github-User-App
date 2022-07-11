@@ -26,7 +26,7 @@ function App() {
 
   useEffect (() => {
     const bodyColor = document.body
-    theme === "light" ? bodyColor.id = "light" : bodyColor.id = "dark"
+    theme === "light" ? bodyColor.className = "light" : bodyColor.className = "dark"
   },[theme])
 
   function getResponse(userData){
@@ -35,7 +35,7 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <main className="flex column" id={theme}>
+      <main className={`flex column ${theme}`}>
         <div className="loader">
           <div>
             <h1>devfinder</h1>

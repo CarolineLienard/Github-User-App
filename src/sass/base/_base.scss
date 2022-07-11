@@ -8,8 +8,12 @@ body {
     background-color: $dark-primary-color;
 }
 
-body#light {
+body.light {
     background-color: $light-background-color;
+}
+
+svg {
+    fill: $dark-color-light;
 }
 
 // Main 
@@ -34,11 +38,11 @@ main {
 }
 
 // Main light theme
-#light main {
+.light main {
     h1, h2, input {
         color: $light-dark-color;
     }
-    p, input::placeholder, a, h4 {
+    p, input::placeholder, a, h4, h5, h6 {
         color: $light-secondary-color;
     }
     svg {
@@ -47,7 +51,7 @@ main {
 }
 
 //Loader
-#light .loader {
+.light .loader {
     background-color: $light-background-color;
 }
 
@@ -108,7 +112,7 @@ h3 {
     }
 }
 
-h4 {
+h4, h5, h6 {
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
@@ -153,7 +157,7 @@ a:hover {
 }
 
 // Button & input
-label {
+span {
     font-weight: 700;
     font-size: 13px;
     letter-spacing: 2.5px;
@@ -198,7 +202,7 @@ input:focus::placeholder {
     color: transparent;
 }
 
-#light input:focus::placeholder {
+.light input:focus::placeholder {
     color: transparent;
 }
 

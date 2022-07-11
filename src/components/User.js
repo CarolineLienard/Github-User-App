@@ -6,7 +6,7 @@ function User ({userData}) {
 
             <div className="user-container__head flex">
                 <div className="user-container__head--img">
-                    <img width="117px" src={userData.avatar_url} alt="" />
+                    <img width="117" src={userData.avatar_url} alt="" />
                 </div>
 
                 <div className="user-container__head--name flex between">
@@ -33,12 +33,12 @@ function User ({userData}) {
                     </div>
 
                     <div className="followers">
-                        <h4>Followers</h4>
+                        <h5>Followers</h5>
                         <h2>{userData.followers}</h2>
                     </div>
 
                     <div className="following">
-                        <h4>Following</h4>
+                        <h6>Following</h6>
                         <h2>{userData.following}</h2>
                     </div>
                 </div>
