@@ -185,6 +185,7 @@ input::placeholder {
     white-space: nowrap;
     @include mobile-only {
         width: 4.3em;
+        font-size: 13px;
     }
 }
 
