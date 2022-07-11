@@ -28,18 +28,18 @@ function User ({userData}) {
 
                 <div className="stats flex">
                     <div className="repo">
-                        <h3>Repos</h3>
-                        <h2>{userData.public_repos}</h2>
+                        <h2>Repos</h2>
+                        <h3>{userData.public_repos}</h3>
                     </div>
 
                     <div className="followers">
-                        <h4>Followers</h4>
-                        <h2>{userData.followers}</h2>
+                        <h2>Followers</h2>
+                        <h3>{userData.followers}</h3>
                     </div>
 
                     <div className="following">
-                        <h5>Following</h5>
-                        <h2>{userData.following}</h2>
+                        <h2>Following</h2>
+                        <h3>{userData.following}</h3>
                     </div>
                 </div>
 

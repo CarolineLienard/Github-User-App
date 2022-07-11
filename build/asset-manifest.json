@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Github-User-App/static/css/main.28591d86.css",
-    "main.js": "/Github-User-App/static/js/main.66f50c35.js",
+    "main.css": "/Github-User-App/static/css/main.7e369197.css",
+    "main.js": "/Github-User-App/static/js/main.90f9af3e.js",
     "index.html": "/Github-User-App/index.html",
     "static/media/icon-search.svg": "/Github-User-App/static/media/icon-search.0cc0c98424cc75d5e1dfbb9e3abb6785.svg",
-    "main.28591d86.css.map": "/Github-User-App/static/css/main.28591d86.css.map",
-    "main.66f50c35.js.map": "/Github-User-App/static/js/main.66f50c35.js.map"
+    "main.7e369197.css.map": "/Github-User-App/static/css/main.7e369197.css.map",
+    "main.90f9af3e.js.map": "/Github-User-App/static/js/main.90f9af3e.js.map"
   },
   "entrypoints": [
-    "static/css/main.28591d86.css",
-    "static/js/main.66f50c35.js"
+    "static/css/main.7e369197.css",
+    "static/js/main.90f9af3e.js"
   ]
 }

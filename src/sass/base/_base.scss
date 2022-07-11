@@ -39,10 +39,10 @@ main {
 
 // Main light theme
 .light main {
-    h1, h2, input {
+    h1, h3, input {
         color: $light-dark-color;
     }
-    p, input::placeholder, a, h3, h4, h5 {
+    p, input::placeholder, a, h2 {
         color: $light-secondary-color;
     }
     svg {
@@ -92,7 +92,7 @@ h1 {
     margin: 0;
 }
 
-h2 {
+h3 {
     font-weight: 700;
     font-size: 22px;
     line-height: 33px;
@@ -102,7 +102,7 @@ h2 {
     }
 }
 
-h3, h4, h5 {
+h2 {
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
