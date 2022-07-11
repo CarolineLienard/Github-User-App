@@ -14,11 +14,10 @@ body#light {
 
 // Main 
 main {
-    width: fit-content;
     margin: 5em auto;
     max-width: 50%;
     @include desktop-small-only {
-        max-width: 60%;
+        max-width: 65%;
     }
     @include ipad-only {
         max-width: 70%;
@@ -100,11 +99,26 @@ p {
 
 a {
     text-decoration: none;
+    @include mobile-only {
+        font-size: 13px;
+    }
+}
+
+.disabled {
+    text-decoration: none;
+    cursor: none;
+    pointer-events: none;
 }
 
 a:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 // Button & input
@@ -130,6 +144,11 @@ input {
 input::placeholder {
     color: $dark-color-light;
     text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    @include mobile-only {
+        width: 4em;
+    }
 }
 
 input:focus {

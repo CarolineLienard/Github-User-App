@@ -8,6 +8,11 @@
     }
     &__head {
         gap: 2rem;
+        .date {
+            p {
+                line-height: 38px;
+            }
+        }
         &--img {
             @include mobile-only {
                 width: 40%;
@@ -25,15 +30,21 @@
                 flex-direction: column;
                 justify-content: unset;
             }
-            h1 {
-                @include mobile-only {
-                    font-size: 16px;
+            .name {
+                width: 45%;
+                @include ipad-only {
+                    width: 90%;
                 }
-            }
-            h3 {
-                color: $primary-color;
-                @include mobile-only {
-                    line-height: 0px;
+                h1 {
+                    @include mobile-only {
+                        font-size: 16px;
+                    }
+                }
+                h3 {
+                    color: $primary-color;
+                    @include mobile-only {
+                        line-height: 1em;
+                    }
                 }
             }
         }
@@ -51,23 +62,35 @@
             padding: 1rem 2rem;
             gap: 5rem;
             @include mobile-only {
-                gap: 3rem;
+                gap: 4rem;
+                justify-content: center;
+                text-align: center;
             }
             @include mobile-small-only {
-                gap: 1.3rem;
-                padding: 1rem 1.5rem;
+                gap: 1.4rem;
             }
         }
         .social {
             gap: 4rem;
+            width: 100%;
             @include mobile-only {
                 gap: 1rem;
-            }
-            svg {
-                fill: $dark-color-light;
-            }
-            @include mobile-only {
                 flex-direction: column;
+            }
+            .social-link {
+                width: 45%;
+                @include mobile-only {
+                    width: 100%;
+                }
+                svg {
+                    fill: $dark-color-light;
+                }
+                @include mobile-only {
+                    flex-direction: column;
+                }
+                .link {
+                    max-width: 80%;
+                }
             }
         }
     }
