@@ -22,7 +22,7 @@ function Search ({getRes}) {
     }
 
     return (
-        <form className="flex center" action="post" role="search">
+        <form className="flex center" action="post" role="search" onSubmit={submitForm}>
             <div>
                 <img src={iconSearch} alt="" />
             </div>
