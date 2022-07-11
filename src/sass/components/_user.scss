@@ -121,6 +121,11 @@
 #light .user-container {
     background-color: $light-card-color;
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    .name {
+        a {
+            color: $primary-color;
+        }
+    }
     .date {
         p {
            color: $light-primary-color;
