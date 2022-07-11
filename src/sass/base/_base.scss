@@ -46,7 +46,11 @@ main {
     }
 }
 
-//Loader 
+//Loader
+#light .loader {
+    background-color: $light-background-color;
+}
+
 .loader {
     display: flex;
     align-items: center;
