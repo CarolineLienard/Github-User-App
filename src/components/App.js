@@ -36,9 +36,14 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <main className="flex column" id={theme}>
-        <Header themeSwitch={toggleTheme} buttonLabel={theme} />
-        <Search getRes={getResponse} />
-        <User userData={userData} />
+        <div className="loader">
+          <div>
+            <h1>devfinder</h1>
+          </div>
+        </div>
+          <Header themeSwitch={toggleTheme} buttonLabel={theme} />
+          <Search getRes={getResponse} />
+          <User userData={userData} />
       </main>
     </ThemeContext.Provider>
   )  
